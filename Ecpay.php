@@ -9,17 +9,17 @@ class Ecpay
     /**
      * 帶入ECPay提供的HashKey
      */
-    private $HashKey;
+    private $HashKey = '';
 
     /**
      * 帶入ECPay提供的MerchantID
      */
-    private $MerchantID;
+    private $MerchantID = '';
 
     /**
      * 帶入ECPay提供的HashIV
      */
-    private $HashIV;
+    private $HashIV = '';
 
     /**
      * CheckMacValue加密類型，請固定填入1，使用SHA256加密
@@ -34,12 +34,12 @@ class Ecpay
     /**
      * 款完成通知轉向位置
      */
-    private $ClientBackURL;
+    private $ClientBackURL = '';
 
     /**
      * 付款完成通知回傳的網址
      */
-    private $ReturnURL;
+    private $ReturnURL = '';
 
     /**
      * 使用電子發票
